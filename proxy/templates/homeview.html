@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Offline Viewer</title>
+</head>
+<body>
+    <h1>Main</h1>
+
+    <p>URLs:</p>
+    {% for domain, count in data %}
+        <a href="/proxy/{{ domain.domain }}">{{ domain.domain }}:: {{ count }}</a>
+{#        <a href="/proxy/{{ data.url }}">{{ doc.url }}</a>#}
+        <br/>
+    {% endfor %}
+</body>
+</html>
