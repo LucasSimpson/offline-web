@@ -9,6 +9,6 @@ Uses Scrapy. Give a seed URL and the distributed scraper will go and crawl the s
 
 # Viewing
 
-Uses Django. Provides a webserver to view the underlying scrapped domains from localhost, enabling browsing without internet access.
+Uses Django. Provides a webserver to view the underlying scrapped domains from localhost, enabling browsing without internet access. Run the webserver with ```python manage.py runsslserver```
 
 

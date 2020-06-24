@@ -27,6 +27,10 @@ class HomeView(TemplateView):
 class ProxyView(View):
 
     def get(self, request, proxy_url, *args, **kwargs):
+        print('IN PROXY, ', request.get_full_path())
+        if request.is_secure():
+            print('SECURE REQUEST ON ', request)
+
         doc = Document.objects.filter(url=proxy_url)[:1]
 
         if len(doc) == 0:

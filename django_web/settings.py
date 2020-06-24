@@ -33,6 +33,8 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
+    'sslserver',
+    
     'proxy',
 
     'django_extensions',
